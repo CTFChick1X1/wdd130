@@ -1,70 +1,135 @@
 
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Esther Mwangi | WDD 130 </title>
-
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px;
-                text-align: center;
-            }
-
-            main {
-                padding: 20px;
-                text-align: center;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                padding: 10px;
-                text-align: center;
-            }
-
-            @media screen and (max-width: 600px) {
-                main {
-                    text-align: left;
-                }
-            }
-        </style>
-
-        
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <h1>Welcome to Esther Mwangi's Website! | WDD 130</h1>
-            <img src="images/profile.jpg" alt="profile picture" width="300" height="300">
-            <p>This is a simple HTML page created for WDD 130.</p>
-            <p> Hello, My name is Esther Mwangi. I am a student at BYU  doing WDD 130, I am learning web development, I enjoy codeing, designing websites and improving my skills in HTML, CSS and Javascript.</p>
-            <p>I am currently working on a project that involves creating a responsive website for a local business.</p>
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Esther Mwangi's personal website." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esther Mwangi | WDD 130 </title>
 
 
-        </main>
+<!-- Add Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        <footer>
-            &copy; 2025 Esther Mwangi. All rights reserved.
-        </footer>
-        
-    </body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        max-height: 100vh;
+
+    }
+    /* Footer styles */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        color: rgb(27, 81, 242);
+        font-size: 24px;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #1DA1F2; /* Twitter blue color */
+    }
+    /* Responsive styles */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+       h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+        text-decoration: none;
+        color: darkblue;
+    }
+    img {
+        width: 300px;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        justify-content: bottom;
+        display: inline;
+    }
+    nav ul li{
+        display: inline;
+        margin-right: 10px;
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 600px) {
+        main {
+            text-align: left;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Welcome to Esther Mwangi's Website! | WDD 130</h1>
+    <img src="images/profiles.jpg" alt="profile picture" width="300" height="300">
+    <p>This is a simple HTML page created for WDD 130.</p>
+    <p> Hello, My name is Esther Mwangi. I am a student at BYU  doing WDD 130, I am learning web development, I enjoy codeing, designing websites and improving my skills in HTML, CSS and Javascript.</p>
+    <p>I am currently working on a project that involves creating a responsive website for a local business.</p>
+
+</main>
+
+<footer>
+    <p>© 2025 Esther Mwangi. Nairobi, Kenya!.</p>
+    
+    <div class="social-icons">
+        <a href="https://twitter.com/Esther_Mwangi" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com/Esther_Mwangi" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/Esther_Mwangi" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/Esther_Mwangi" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+</footer>
+
+</body>
 </html>
