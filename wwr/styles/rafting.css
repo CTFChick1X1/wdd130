@@ -18,6 +18,7 @@ body {
 }
 
 h1, h2 {
+    text-align: center;
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
@@ -25,20 +26,41 @@ h1, h2 {
 p {
     font-size: 1rem;
     line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Navigation Bar */
+/* Header with Grid */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--accent1-color);
+}
+
+/* Navigation Bar with Flex */
 nav {
     display: flex;
     justify-content: flex-end;
     padding: 15px 20px;
-    background-color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
 }
 
 nav a {
     color: var(--accent2-color);
     text-decoration: none;
-    margin-left: 20px;
     font-weight: bold;
 }
 
@@ -47,12 +69,6 @@ nav a {
     height: 40px;
     width: auto;
     display: block;
-    margin-right: auto;
-}
-
-/* Remove underlines from social media links */
-footer a {
-    text-decoration: none;
 }
 
 /* Hero Section */
@@ -103,20 +119,74 @@ footer a {
     border-radius: 50%;
 }
 
+/* History Section with Improved Layout */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.history img {
+    max-width: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.history p {
+    max-width: 100%;
+    text-align: justify;
+}
+
+/* Adventures Section */
+.adventures {
+    text-align: center; /* Centers the h2 */
+    padding: 20px;
+}
+
+.adventures h2 {
+    margin-bottom: 20px;
+}
+
+/* Container for images to align in a row */
+.adventures-container {
+    display: flex;
+    justify-content: center; /* Centers the images */
+    gap: 10px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.adventures-container figure {
+    text-align: center;
+}
+
+.adventures-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* Footer */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     background: rgba(2, 62, 138, 0.9);
     color: var(--accent2-color);
 }
 
 footer p {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
-footer a img {
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-icons img {
     width: 30px;
-    margin: 0 10px;
-    filter: brightness(1.2);
 }
