@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Whitewater Rafting Adventures. Contact us for general inquiries, reservations, or suggestions. We're here to help you plan your next adventure!">
+  <title>Contact Us | Whitewater Rafting Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/water-rafting.jpeg" alt="Rafting Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Whitewater Rafting Adventures</p>
+      <p>123 River Road, Rapids City, CO 81234</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: info@wwrafting.com</p>
+
+      <h3>Our Location</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3..."
+        width="100%" height="300" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section class="employee-team">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/employee1.jpg" alt="Smiling rafting guide">
+          <figcaption>Rachel – Lead Rafting Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Smiling office coordinator">
+          <figcaption>Jess – Reservation Specialist</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Smiling safety instructor">
+          <figcaption>Mike – Safety Instructor</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Whitewater Rafting Adventures | Designed by Esther Mwangi</p>
+    <div class="social-icons">
+        <a href=""><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </div>
+    <p><a href="https://app.moqups.com/LBgY0YP7wAFk1B0BqOen8gj7bYvwzLrN/view/page/ad64222d5" target="_blank">View Contact Us Page Wireframe</a></p>
+  </footer>
+</body>
+</html>
