@@ -306,6 +306,46 @@ main {
   .contact-form button:hover {
     background-color: #026c9e;
   }
+
+  cta {
+    text-align: center;
+    background-color: #94d2bd;
+    padding: 2rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #005f73;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter {
+    padding: 2rem;
+    background-color: #eee;
+    text-align: center;
+  }
+  
+  .newsletter input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .grid-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
   
   /* ========== Footer ========== */
   footer {
